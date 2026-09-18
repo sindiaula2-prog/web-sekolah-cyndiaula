@@ -1,0 +1,127 @@
+/* ================= EKSTRAKURIKULER PAGE ================= */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------- HERO ---------- */
+.eskul-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: #fff;
+    padding: 70px 0 90px;
+    text-align: center;
+}
+
+.eskul-overlay .container {
+    max-width: 700px;
+}
+
+.eskul-label {
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #93c5fd;
+    margin-bottom: 10px;
+}
+
+.eskul-hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.eskul-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dbeafe;
+}
+
+/* ---------- SECTION HEADING ---------- */
+.eskul-section {
+    padding: 60px 0 80px;
+    background: #f8fafc;
+}
+
+.eskul-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.eskul-heading span {
+    display: inline-block;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.eskul-heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.eskul-heading p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* ---------- CARD GRID ---------- */
+.eskul-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.eskul-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eskul-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(30, 58, 138, 0.15);
+}
+
+.eskul-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.eskul-card h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.eskul-card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .eskul-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .eskul-hero h1 {
+        font-size: 30px;
+    }
+    .eskul-grid {
+        grid-template-columns: 1fr;
+    }
+}
